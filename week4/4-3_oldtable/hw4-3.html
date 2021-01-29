@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="hw4-3.css" />
+  </head>
+  <body>
+    <!-- display: block;
+    margin-left: auto; -->
+
+    <div class="sitemap">
+      <img
+        src="img/CPRElogo.png"
+        alt="Logo"
+        width="90"
+        height="80"
+        style="display: block; margin-left: auto"
+      />
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/me.jpg" class="img-slide" />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/thai-german.jpg" class="img-slide" />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/ABU2020.jpg" class="img-slide" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="row">
+      <div class="column1">
+         <h2 class="topic">Schedule</h2>
+        <table class="schedule-table">
+          <h2 class="topic">Schedule</h2>
+          <thead>
+            <tr>
+              <th>Day\Time</th>
+              <th>8.00</th>
+              <th>9.00</th>
+              <th>10.00</th>
+              <th>11.00</th>
+              <th>12.00</th>
+              <th>13.00</th>
+              <th>14.00</th>
+              <th>15.00</th>
+              <th>16.00</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td></td>
+              <td colspan="3" bgcolor="#eec493">Analog and Digital</td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td></td>
+              <td colspan="3" bgcolor="#eec493">Software development II</td>
+              <td colspan="1"></td>
+              <td colspan="3" bgcolor="#eec493">General Mathematic</td>
+              <td colspan="1"></td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td></td>
+              <td colspan="3" bgcolor="#eec493">Computer Organization</td>
+              <td colspan="1"></td>
+              <td colspan="3" bgcolor="#eec493">Ubiquitous Computing</td>
+              <td colspan="1"></td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td></td>
+              <td colspan="3" bgcolor="#eec493">Computer Network I</td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td></td>
+              <td colspan="3" bgcolor="#eec493">Software development II</td>
+              <td colspan="5"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="column2">
+        <h2 class="topic">Comment</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column1">
+        <h2 class="topic">favorite subject</h2>
+      
+      </div>
+
+      <div class="column2">
+        <h2 class="topic"> outsource</h2>
+        
+      </div>
+    </div>
+
+    <script src="hw4-3.js"></script>
+  </body>
+</html>

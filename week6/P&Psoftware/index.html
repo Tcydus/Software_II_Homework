@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+  <link rel="stylesheet" href="css/font-awesome.css" >
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/todo.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <h3 style="float: left; margin:15px 0 0 20px; color:white;"> P & P <div style="color: #FF6A3D;margin-bottom:10px">Software</div></h3>
+    
+    <a onclick="goTo('outsource')">Outsource</a>
+    <a  onclick="goTo('favorite')">Favorite subject</a>
+    <a onclick="goTo('comment')">Comment</a>
+    <a onclick="goTo('schedule')">Schedule</a>
+    <a onclick="goTo('todo')">To Do List</a>
+  </div>
+  <div class="head-row"  >
+      <div class="head-column1">
+        
+       <h2 style="color : #FF6A3D; margin: 150px 0 0 50px; font-size : 2.5em"> Do you want to know me and faculty?</h2>
+       <h2 style="color : white; margin: 10px 0 0 50px; font-size : 1em"> See more to know about this. </h2>
+     
+     
+      </div>
+      <div class="head-column2">
+        <div class="slideshow-container">
+  
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/me2.jpg" class="img-slide" />
+  
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/ecamp-robot.jpg" class="img-slide" />
+  
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/ecamp-lab.jpg" class="img-slide" />
+  
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/ABU2020.jpg" class="img-slide" />
+  
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/ABUTeam.jpg" class="img-slide" />
+  
+          </div>
+  
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+       
+       
+      </div>
+    </div>
+      
+
+    <div class="column1">
+      <h2 class="topic" id="todo">To Do List</h2>
+        <div class="container">
+          <div class="header">
+            <div class="clear">
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+            </div>
+            <div id="date"></div>
+
+          </div>
+          <div class="content">
+            <ul id="list">
+              
+            </ul>
+          </div>
+          <div class="add-to-do">
+            <i class="fa fa-plus-circle" id="add-icon" job="add" aria-hidden="true"></i>
+            <input type="text" id="input" placeholder="Add a to do">
+          </div>
+        </div>
+   
+      </div>
+    </div>
+      
+      <div class="column2">
+
+        <h2 class="topic">Schedule</h2>
+        
+          <table id="schedule">
+            <thead>
+              <tr>
+                <th>Day\Time</th>
+                <th>8.00</th>
+                <th>9.00</th>
+                <th>10.00</th>
+                <th>11.00</th>
+                <th>12.00</th>
+                <th>13.00</th>
+                <th>14.00</th>
+                <th>15.00</th>
+                <th>16.00</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td></td>
+                <td colspan="3" bgcolor="#FF6A3D">Analog and Digital</td>
+                <td colspan="5"></td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td></td>
+                <td colspan="3" bgcolor="#FF6A3D">Software development II</td>
+                <td colspan="1"></td>
+                <td colspan="3" bgcolor="#FF6A3D">General Mathematic</td>
+                <td colspan="1"></td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td></td>
+                <td id="schedule" colspan="3" bgcolor="#FF6A3D">Computer Organization</td>
+                <td colspan="1"></td>
+                <td colspan="3" bgcolor="#FF6A3D">Ubiquitous Computing</td>
+                <td colspan="1"></td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td></td>
+                <td colspan="3" bgcolor="#FF6A3D">Computer Network I</td>
+                <td colspan="5"></td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td></td>
+                <td colspan="3" bgcolor="#FF6A3D">Software development II</td>
+                <td colspan="5"></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <div class="column2">
+        <h2 class="topic" id="comment">Comment</h2>
+
+        <table>
+          <tr>
+            <td>- Analog and Digital</td>
+            <td style="padding:0 15px 0 15px;">(Love) <i class="fa fa-heart fa-2x" style="color:red;";aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td>- Computer Organization</td>
+            <td style="padding:0 15px 0 15px;">(Love) <i class="fa fa-heart fa-2x" style="color:red;";aria-hidden="true"></i> </td>
+          </tr>
+          <tr>
+            <td>- Software development II</td>
+            <td style="padding:0 15px 0 15px;">(Like) <i class="fa fa-thumbs-up fa-2x" style="color:blue;" aria-hidden="true"> </i></td>
+          </tr>
+          <tr>
+            <td>- Computer Network I</td>
+            <td style="padding:0 15px 0 15px;">(Like) <i class="fa fa-thumbs-up fa-2x" style="color:blue;" aria-hidden="true"> </i></td>
+          </tr>
+          <tr>
+            <td>- General Mathematic</td>
+            <td style="padding:0 15px 0 15px;">(No Comment : เนื้อหาเหมือนตอนมัธยมต้น) <i class="fa fa-meh-o fa-2x" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td>- Ubiquitous Computing</td>
+            <td style="padding:0 15px 0 15px;">(Bad feeling : อ่าน Textbook เข้าใจกว่านั่งฟัง) <i class="fa fa-frown-o fa-2x" aria-hidden="true"></i> </td>
+          </tr>
+        </table>
+        <img src="img/book.jpg" alt="Book" width="100" height="120" style="display: block; margin-left: auto" />
+      </div>
+    
+  </div>
+
+  <div class="row">
+      <div class="column1">
+        <h2 class="topic" id="favorite">favorite subject</h2>
+        <h2> Analog and Digital</h2>
+        <p style="font-size: large;"><span>&nbsp; &nbsp;&nbsp;</span> วิชานี้กล่าวถึงการอุปกรณ์สารกึ่งตัวนำ
+          (Semiconductor) ทั้งไดโอด ทรานซิสเตอร์
+          ทำการสร้างวงจรใหม่ขึ้นมาให้เกิดประโยชน์ต่างๆ เช่นการเปลี่ยนไฟฟ้ากระแสสลับเป็นไฟฟ้ากระแสตรง เป็นต้น
+          โดยสาเหตุที่ชอบคือ ชอบการออกแบบวงจรทางไฟฟ้า
+          เพราะมันจะทำให้เกิดผลลัพธ์ต่าง ๆ ออกมา ซึ่งเราสามารถพิสูจน์ได้ด้วยสมการทางคณิตศาสตร์</p>
+
+        </p>
+        <img src="img/component.jpg" alt="Phasit" width="512" height="288" class="center-img">
+      </div>
+    
+
+      <div class="column2" id="outsource">
+        <h2 class="topic">outsource</h2>
+        <table>
+          <tr>
+            <td>
+              <h4>What is semiconductor?</h4>
+            </td>
+            <td>
+              <h4>Cryptography | Blockchain </h4>
+            </td>
+          </tr>
+          <tr>
+            <td><iframe width="350" height="200" src="https://www.youtube.com/embed/gUmDVe6C-BU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></td>
+            <td><iframe width="350" height="200" src="https://www.youtube.com/embed/2sPpuMclSQU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></td>
+          </tr>
+        </table>
+      </div>
+    
+  </div>
+
+  <div class="row">
+    <div class="column"> 
+      <footer class="footer-distributed">
+ 
+        <div class="footer-left">
+          <h3>P & P<span> Software</span></h3>
+          <p class="footer-company-name">P & P Software &copy; 2020</p>
+        </div>
+     
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>153/67 Bangkruai Street</span> Nontraburi, Thailand</p>
+          </div>
+     
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+66 80 142 4504</p>
+          </div>
+     
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto: s6201012610061@email.kmutnb.ac.th">s6201012610061@email.kmutnb.ac.th</a></p>
+          </div>
+
+        </div>
+     
+        <div class="footer-right">
+          
+          <p class="footer-company-about">
+          <span>About this website</span>
+            This web create for software development practice II.
+          </p>
+     
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/natthanan.sangklub"><i class="fa fa-facebook"></i></a>
+            <a href="https://github.com/Tcydus"><i class="fa fa-github"></i></a>
+          </div>
+
+        </div>
+     
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/todo.js"></script>
+  <script src="js/slidepic.js"></script>
+  
+</body>
+
+</html>

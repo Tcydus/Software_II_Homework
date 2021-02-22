@@ -1,0 +1,52 @@
+[
+  {
+    "key": "sem1/2562",
+    "values": [
+      {
+        "subject": "PROGRAMMING FUNDAMENTALS",
+        "weight": 3,
+        "grade": 4
+      },
+      {
+        "subject": "COMPUTER ENGINEERING EXPLORA",
+        "weight": 1,
+        "grade": 4
+      },
+      {
+        "subject": "INTRODUCTION TO ENGINEERING",
+        "weight": 1,
+        "grade": 3.5
+      },
+      {
+        "subject": "ENGINEERING MATHEMATICS I",
+        "weight": 3,
+        "grade": 4
+      },
+      {
+        "subject": "PHYSICS I",
+        "weight": 3,
+        "grade": 3.5
+      },
+      {
+        "subject": "PHYSICS LABORATORY I",
+        "weight": 1,
+        "grade": 4
+      },
+      {
+        "subject": "ENGLISH I",
+        "weight": 3,
+        "grade": 4
+      },
+      {
+        "subject": "MAN AND SOCIETY",
+        "weight": 3,
+        "grade": 3.5
+      },
+      {
+        "subject": "TABLE TENNIS",
+        "weight": 1,
+        "grade": 3
+      }
+    ]
+  }
+]

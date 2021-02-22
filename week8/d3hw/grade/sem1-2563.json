@@ -1,0 +1,42 @@
+[
+  {
+    "key": "sem1/2563",
+    "values": [
+      {
+        "subject": "STATISTICS FOR COMPUTER ENGI",
+        "weight": 3,
+        "grade": 3
+      },
+      {
+        "subject": "INTRODUCTION TO SIGNALS AND",
+        "weight": 3,
+        "grade": 3.5
+      },
+      {
+        "subject": "LOGIC DESIGN OF DIGITAL SYST",
+        "weight": 3,
+        "grade": 4
+      },
+      {
+        "subject": "DIGITAL SYSTEM DESIGN LABORA",
+        "weight": 1,
+        "grade": 3.5
+      },
+      {
+        "subject": "SOFTWARE DEVELOPMENT PRACTIC",
+        "weight": 3,
+        "grade": 3.5
+      },
+      {
+        "subject": "DISCRETE MATHEMATICS",
+        "weight": 3,
+        "grade": 1.5
+      },
+      {
+        "subject": "PHYSICS IN DAILY LIFE",
+        "weight": 3,
+        "grade": 3.5
+      }
+    ]
+  }
+]

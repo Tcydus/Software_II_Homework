@@ -1,0 +1,52 @@
+[
+  {
+    "key": "sem2/2562",
+    "values": [
+      {
+        "subject": "ELECTRIC CIRCUIT THEORY",
+        "weight": 3,
+        "grade": 4
+      },
+      {
+        "subject": "ELECTRIC CIRCUIT LAB",
+        "weight": 1,
+        "grade": 4
+      },
+      {
+        "subject": "ALGORITHMS AND DATA STRUCTUR",
+        "weight": 3,
+        "grade": 4
+      },
+      {
+        "subject": "WORK ETHICS",
+        "weight": 1,
+        "grade": 4
+      },
+      {
+        "subject": "ENGINEERING MATHEMATICS II",
+        "weight": 3,
+        "grade": 3.5
+      },
+      {
+        "subject": "PHYSICS II",
+        "weight": 3,
+        "grade": 3.5
+      },
+      {
+        "subject": "PHYSICS LABORATORY II",
+        "weight": 1,
+        "grade": 4
+      },
+      {
+        "subject": "ENGLISH II",
+        "weight": 3,
+        "grade": 3
+      },
+      {
+        "subject": "BASKETBALL",
+        "weight": 1,
+        "grade": 2.5
+      }
+    ]
+  }
+]

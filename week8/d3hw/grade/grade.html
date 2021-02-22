@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Smoothed D3.js Radar Chart</title>
+
+		<!-- Google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+      d3version5 = d3;
+      window.d3 = null;
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script>
+      d3version3 = d3;
+      window.d3 = null;
+    </script>
+		
+		<link href="style.css" rel='stylesheet'>
+	
+	</head>
+	<body>
+
+
+		<div class="container">
+			<div class="barGraph item">
+				<svg></svg>
+			</div>
+			<script src="barChart.js"></script>
+			<div class="sem1-62 item">
+				<h3 style="text-align: center;"> Semester 1/2562 </h3>
+				<div class="radarChart1" style="text-align: center;"></div>
+			</div>
+			<div class="sem2-62 item">
+				<h3 style="text-align: center;"> Semester 2/2562 </h3>
+
+				<div class="radarChart2" style="text-align: center;" ></div>
+			</div>
+			<div class="sem1-63 item">
+				<h3 style="text-align: center;" > Semester 1/2563 </h3>
+
+				<div class="radarChart3" style="text-align: center;"></div>
+			</div>
+		</div>
+
+		<script src="radarChart.js"></script>	
+		<script>
+		
+
+			d3 = d3version3;
+			var margin = {top: 100, right: 100, bottom: 100, left: 100},
+			width = Math.min(400, window.innerWidth - 10) - margin.left - margin.right,
+			height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+
+			var color = d3.scale.ordinal()
+				.range(["#EDC951","#CC333F","#00A0B0"]);
+				
+			var Option1 = {
+			  w: width,
+			  h: height,
+			  margin: margin,
+			  maxValue: 4,
+			  levels: 4,
+			  roundStrokes: true,
+			  color: color
+			};
+			
+
+
+			d3.json("sem1-2562.json", function(error, data){
+				RadarChart(".radarChart1", data, Option1);
+			});
+			d3.json("sem2-2562.json", function(error, data){
+				RadarChart(".radarChart2", data, Option1);
+			});
+			d3.json("sem1-2563.json", function(error, data){
+				RadarChart(".radarChart3", data, Option1);
+			});
+		</script>
+		
+
+	
+	</body>
+</html>
